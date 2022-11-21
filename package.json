@@ -1,0 +1,28 @@
+{
+  "name": "@giopan/react-admin",
+  "version": "1.0.0",
+  "author": "GioPan04",
+  "license": "MIT",
+  "private": false,
+  "description": "A react library to create beautiful admin dashboards",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "types": "./lib/esm/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GioPan04/react-admin"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.25",
+    "react": "^18.2.0",
+    "typescript": "^4.9.3"
+  },
+  "scripts": {
+    "build": "yarn build:esm && yarn build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir lib/cjs"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  }
+}
